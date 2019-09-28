@@ -11,15 +11,16 @@
 ## 1、创建.aidl文件
 > * 1.1 new->AIDL FILE  会在src->main->aidl下生成aidl文件，
 > * 1.2 build/rebuild后，会自动生成java的接口文件文件目录在：/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/
-> * aidl 接口支持的数据类型
-Java 编程语言中的所有原语类型（如 int、long、char、boolean 等）
-String
-CharSequence
-List
-List 中的所有元素必须是以上列表中支持的数据类型，或者您所声明的由 AIDL 生成的其他接口或 Parcelable 类型。您可选择将 List 用作“泛型”类（例如，List<String>）。尽管生成的方法旨在使用 List 接口，但另一方实际接收的具体类始终是 ArrayList。
 
-Map
-Map 中的所有元素必须是以上列表中支持的数据类型，或者您所声明的由 AIDL 生成的其他接口或 Parcelable 类型。不支持泛型 Map（如 Map<String,Integer> 形式的 Map）。尽管生成的方法旨在使用 Map 接口，但另一方实际接收的具体类始终是 HashMap。
+注意：
+aidl 接口支持的数据类型
+1、java编程语言中的所有原语类型（如 int、long、char、boolean 等）
+2、String
+3、CharSequence
+4、List
+备注：List 中的所有元素必须是以上列表中支持的数据类型，或者您所声明的由 AIDL 生成的其他接口或 Parcelable 类型。您可选择将 List 用作“泛型”类（例如，List<String>）。尽管生成的方法旨在使用 List 接口，但另一方实际接收的具体类始终是 ArrayList。
+5、Map
+备注：Map 中的所有元素必须是以上列表中支持的数据类型，或者您所声明的由 AIDL 生成的其他接口或 Parcelable 类型。不支持泛型 Map（如 Map<String,Integer> 形式的 Map）。尽管生成的方法旨在使用 Map 接口，但另一方实际接收的具体类始终是 HashMap。
 
 
 ## 2、实现接口
