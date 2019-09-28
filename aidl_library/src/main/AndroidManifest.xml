@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.azhansy.aidl_library">
+
+    <application>
+        <service
+            android:name="com.azhansy.aidl_library.LoginAidlService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.azhansy.aidl" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
