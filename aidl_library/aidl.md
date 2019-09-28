@@ -82,7 +82,8 @@ intent.setAction("com.azhansy.aidl");
 intent.setPackage("com.azhansy.learningnotes");
 bindService(intent, connection, Context.BIND_AUTO_CREATE);
 ```
-> * 3.2 在绑定服务连接回调回来时，即可拿到对应的接口，拿到后，即可操作相关逻辑
+> * 3.2 把aidl复制一个到第三方应用下，路径保持跟上面的一模一样
+> * 3.3 在绑定服务连接回调回来时，即可拿到对应的接口，拿到后，即可操作相关逻辑
 
 ``` java
 ServiceConnection connection = new ServiceConnection() {
